@@ -7,7 +7,9 @@
  "engine": "InnoDB",
  "field_order": [
   "linked_user",
-  "hashed_password"
+  "hashed_password",
+  "password_reset_token",
+  "expires_on"
  ],
  "fields": [
   {
@@ -22,13 +24,22 @@
   {
    "fieldname": "hashed_password",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Hashed Password"
+  },
+  {
+   "fieldname": "password_reset_token",
+   "fieldtype": "Data",
+   "label": "Password Reset Token"
+  },
+  {
+   "fieldname": "expires_on",
+   "fieldtype": "Datetime",
+   "label": "Expires On"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-09 15:37:32.588684",
+ "modified": "2024-09-10 00:08:00.455960",
  "modified_by": "Administrator",
  "module": "Next Integration",
  "name": "NextAuthUser",
@@ -44,30 +55,6 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Alumini",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Student",
    "share": 1,
    "write": 1
   }
