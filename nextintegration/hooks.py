@@ -159,9 +159,10 @@ app_license = "mit"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "nextintegration.event.get_events"
-# }
+override_whitelisted_methods = {
+    "nextintegration.next_integration.doctype.nextauthuser.api.trigger_next_reset_password": 
+    "nextintegration.next_integration.doctype.nextauthuser.api.trigger_next_reset_password"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
