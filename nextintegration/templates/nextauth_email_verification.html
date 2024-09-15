@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<p>{{ _("Dear") }} {{ first_name }}{% if last_name %} {{ last_name }}{% endif %},</p>
+			<p>{{ _("Click on below link to verify your account.") }}</p>
+			<p>
+				<a class="btn btn-primary" href="{{ verification_link }}"
+					>{{ _("Verify your email address") }}</a
+				>
+			</p>
+			<p>
+				{{ _("Thank you") }},<br />
+				{{ sent_by }}
+			</p>
+		</div>
+	</div>
+</div>
