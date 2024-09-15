@@ -9,7 +9,9 @@
   "linked_user",
   "hashed_password",
   "password_reset_token",
-  "expires_on"
+  "expires_on",
+  "email_verification_token",
+  "email_verified"
  ],
  "fields": [
   {
@@ -35,11 +37,22 @@
    "fieldname": "expires_on",
    "fieldtype": "Datetime",
    "label": "Expires On"
+  },
+  {
+   "fieldname": "email_verification_token",
+   "fieldtype": "Data",
+   "label": "Email Verification Token"
+  },
+  {
+   "default": "0",
+   "fieldname": "email_verified",
+   "fieldtype": "Check",
+   "label": "Email Verified"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-10 00:08:00.455960",
+ "modified": "2024-09-15 22:18:59.752717",
  "modified_by": "Administrator",
  "module": "Next Integration",
  "name": "NextAuthUser",

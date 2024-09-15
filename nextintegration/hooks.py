@@ -161,7 +161,9 @@ app_license = "mit"
 #
 override_whitelisted_methods = {
     "nextintegration.next_integration.doctype.nextauthuser.api.trigger_next_reset_password": 
-    "nextintegration.next_integration.doctype.nextauthuser.api.trigger_next_reset_password"
+    "nextintegration.next_integration.doctype.nextauthuser.api.trigger_next_reset_password",
+    "nextintegration.next_integration.doctype.nextauthuser.api.trigger_next_user_verification":
+    "nextintegration.next_integration.doctype.nextauthuser.api.trigger_next_user_verification"
 }
 #
 # each overriding function accepts a `data` argument;
