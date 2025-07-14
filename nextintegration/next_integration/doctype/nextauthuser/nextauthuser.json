@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:linked_user",
  "creation": "2024-08-23 15:14:01.983525",
@@ -50,9 +51,10 @@
    "label": "Email Verified"
   }
  ],
+ "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-15 22:18:59.752717",
+ "modified": "2025-07-14 16:55:00.310979",
  "modified_by": "Administrator",
  "module": "Next Integration",
  "name": "NextAuthUser",
@@ -72,6 +74,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []
